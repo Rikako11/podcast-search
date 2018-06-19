@@ -1,0 +1,95 @@
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    display: inline-block;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color:transparent;
+    text-align: center;
+    transition: all 0.2s;
+}
+input[type="submit"], button:hover{
+     color:#000000;
+     background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+    button, html input[type="button"], input[type="reset"], input[type="submit"]{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+::placeholder {
+    color: silver;
+}
+
+#searchFieldText:focus {
+    color: silver;
+}
+
+.w3-table-all {
+    border: 1px solid #ccc;
+}
+
+.w3-table, .w3-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+input, button, select, textarea {
+    color: silver;
+}
+
+.section-title {
+    margin: 50px;
+    padding-top:30px;
+}
+
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.container {
+    padding: 0px 80px;
+}
+
+div::before{
+     content:none;
+ }
+
+a.button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-size: 20px;
+    font-family:'Roboto',sans-serif;font-weight:300;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+     a.button1{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+img.logo {
+    width: 30px;
+
+
+}
