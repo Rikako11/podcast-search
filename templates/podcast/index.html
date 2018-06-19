@@ -53,7 +53,7 @@
         }
         $(document).ready(function()
             {
-                $("w3-table-all").tablesorter();
+                $("table").tablesorter();
             }
         );
         // using jQuery
@@ -78,7 +78,6 @@
                     <li><a href="{% url 'toppodcasts' %}" class="">Top Podcasts All Time</a></li>
                     <li><a href="{% url 'toptags' %}" class="">Top Tags</a></li>
                     <li><a href="{% url 'subscribed' %}" class="">Subscribed</a></li>
-                    <li><a href="{% url 'subscribed' %}" class="">Trending Podcasts This Week</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -135,8 +134,11 @@
 
         {% if search_result|length != 0%}
         <div class="row">
-            <table class="w3-table-all">
+            <table id="w3-table-all" class="tablesorter">
+                <thead>
                 <tr><th>Logo</th><th>Title</th><th>URL</th><th>Subscribers</th><th>Subscribers Last Week</th></tr>
+                </thead>
+                <tbody>
                 {% for result in search_result %}
                 <tr>
                     {%if result.logo_url|length == 0%}
@@ -150,10 +152,14 @@
                     <td>
                         {{result.title}}
                     </td>
+                    <td>
+                        {{result.description}}
+                    </td>
                     <td><a href="{{result.url}}">
                         {{result.url|slice:":30"}}...
                     </a>
                     </td>
+
                     <td>
                         {{result.subscribers}}
                     </td>
@@ -163,6 +169,7 @@
 
                 </tr>
                 {% endfor %}
+                </tbody>
             </table>
         </div>
         {% endif %}

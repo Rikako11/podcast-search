@@ -89,12 +89,12 @@ def login(request):
             username = request.POST.get('user')
             password = request.POST.get('pass')
             user = api.MygPodderClient(username, password)
-            return render_to_response('podcast/index.html')
+            
         except :
             print("invalid!")
             return render_to_response('podcast/login.html', {"error" : "Invalid Username or Password!"})
-    return render_to_response('podcast/login.html')
-
-    
+    response = render_to_response("template.html", {})
+    response['Cache-Control'] = 'no-cache'
+    return response
 
     

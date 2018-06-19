@@ -9,13 +9,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/bootstrap.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/fonts/font-awesome/css/font-awesome.css' %}">
@@ -31,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/nivo-lightbox/nivo-lightbox.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/nivo-lightbox/default.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/main.css' %}">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="{% static 'podcast/js/jquery.1.11.1.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/bootstrap.js' %}"></script>
@@ -42,15 +34,6 @@
     <script type="text/javascript" src="{% static 'podcast/js/jqBootstrapValidation.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jquery.tablesorter.min.js' %}"></script>
     <script type="text/javascript">
-        function goToByScroll(id) {
-            // Remove "link" from the ID
-            id = id.replace("link", "");
-            // Scroll
-            $('html,body').animate({
-                    scrollTop: $("#" + id).offset().top
-                },
-                'slow');
-        }
         $(document).ready(function()
             {
                 $("w3-table-all").tablesorter();

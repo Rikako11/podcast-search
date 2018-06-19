@@ -9,13 +9,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/bootstrap.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/fonts/font-awesome/css/font-awesome.css' %}">
@@ -31,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/nivo-lightbox/nivo-lightbox.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/nivo-lightbox/default.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'podcast/css/main.css' %}">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="{% static 'podcast/js/jquery.1.11.1.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/bootstrap.js' %}"></script>
@@ -42,18 +34,9 @@
     <script type="text/javascript" src="{% static 'podcast/js/jqBootstrapValidation.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jquery.tablesorter.min.js' %}"></script>
     <script type="text/javascript">
-        function goToByScroll(id) {
-            // Remove "link" from the ID
-            id = id.replace("link", "");
-            // Scroll
-            $('html,body').animate({
-                    scrollTop: $("#" + id).offset().top
-                },
-                'slow');
-        }
         $(document).ready(function()
             {
-                $("w3-table-all").tablesorter();
+                $("table").tablesorter();
             }
         );
         // using jQuery
@@ -80,7 +63,6 @@
                     <li><a href="{% url 'toppodcasts' %}" class="">Top Podcasts All Time</a></li>
                     <li><a href="{% url 'toptags' %}" class="">Top Tags</a></li>
                     <li><a href="{% url 'subscribed' %}" class="">Subscribed</a></li>
-                    <li><a href="{% url 'subscribed' %}" class="">Trending Podcasts This Week</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -97,11 +79,15 @@
         </div>
         <div class="row">
             <table class="w3-table-all">
+                <thead>
                 <tr><th>Title</th><th>Description</th><th>URL</th><th>Subscribers</th><th>Subscribers From Last Week</th></tr>
+                </thead>
+                <tbody>
                 {% for result in podcasts %}
                 <tr>
                     <td><a href="../episodes/?q={{result.url}}">
                         {{result.title}}
+                    </a>
                     </td>
                     <td>
                         {{result.description}}
@@ -118,7 +104,7 @@
                     </td>
                 </tr>
                 {% endfor %}
-
+                </tbody>
             </table>
         </div>
     </div>

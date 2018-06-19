@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a08f4928-fdf4-4f62-9cc3-58b283ef2be0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podcast/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/podcast/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searches/middleware.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/searches/mygpo.py" beforeDir="false" afterPath="$PROJECT_DIR$/searches/mygpo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/searches/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/podcast/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/podcast/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/podcast/episodes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/episodes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/podcast/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/podcast/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/podcast/search_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/search_result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/podcast/subscribed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/subscribed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/podcast/toppodcasts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/toppodcasts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/podcast/toptags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/toptags.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,26 +28,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="episodes.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="episodes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/episodes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="110" column="52" selection-start-line="110" selection-start-column="52" selection-end-line="110" selection-end-column="52" />
-              <folding>
-                <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="386">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -44,13 +46,8 @@
       <file leaf-file-name="subscribed.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/subscribed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="237">
+              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -59,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/templates/podcast/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="n#head#1;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#html#0;n#!!top" />
@@ -69,30 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toptags.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toptags.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/podcast/toptags.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="94" column="59" selection-start-line="94" selection-end-line="95" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_result.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/podcast/search_result.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="64" column="3" selection-start-line="64" selection-end-line="90" />
-              <folding>
-                <element signature="n#head#1;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -100,8 +78,8 @@
       <file leaf-file-name="toppodcasts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/toppodcasts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="81" column="76" selection-start-line="81" selection-start-column="76" selection-end-line="81" selection-end-column="76" />
+            <state relative-caret-position="204">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -109,8 +87,21 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/podcast/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="127" column="20" lean-forward="true" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="24" />
+            <state relative-caret-position="2261">
+              <caret line="133" column="17" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_result.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/podcast/search_result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="92" column="50" lean-forward="true" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+              <folding>
+                <element signature="n#div#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,8 +120,8 @@
     <findStrings>
       <find>standou</find>
       <find>mp3</find>
-      <find>Subscribers</find>
       <find>subscribers</find>
+      <find>Subscribers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,12 +140,12 @@
         <option value="$PROJECT_DIR$/staticfiles/podcast/css/main.css" />
         <option value="$PROJECT_DIR$/templates/podcast/login.html" />
         <option value="$PROJECT_DIR$/static/podcast/css/main.css" />
-        <option value="$PROJECT_DIR$/templates/podcast/toptags.html" />
-        <option value="$PROJECT_DIR$/templates/podcast/toppodcasts.html" />
         <option value="$PROJECT_DIR$/templates/podcast/search_result.html" />
-        <option value="$PROJECT_DIR$/templates/podcast/subscribed.html" />
         <option value="$PROJECT_DIR$/templates/podcast/index.html" />
+        <option value="$PROJECT_DIR$/templates/podcast/subscribed.html" />
         <option value="$PROJECT_DIR$/templates/podcast/episodes.html" />
+        <option value="$PROJECT_DIR$/templates/podcast/toppodcasts.html" />
+        <option value="$PROJECT_DIR$/templates/podcast/toptags.html" />
       </list>
     </option>
   </component>
@@ -177,7 +168,59 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="searches" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="podcast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="podcast" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -223,7 +266,7 @@
       <workItem from="1528856063872" duration="958000" />
       <workItem from="1528931429747" duration="6035000" />
       <workItem from="1529201250781" duration="21383000" />
-      <workItem from="1529363973921" duration="49927000" />
+      <workItem from="1529363973921" duration="59055000" />
     </task>
     <task id="LOCAL-00001" summary="New Project">
       <created>1528856340045</created>
@@ -250,19 +293,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78303000" />
+    <option name="totallyTimeSpent" value="87431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298969" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24980484" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3298969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -273,32 +316,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3298969" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3298969" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3298969" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3298969" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -317,11 +338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -408,55 +424,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/login.html">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="n#head#1;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/toptags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="94" column="59" selection-start-line="94" selection-end-line="95" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/toppodcasts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="81" column="76" selection-start-line="81" selection-start-column="76" selection-end-line="81" selection-end-column="76" />
+        <state relative-caret-position="1766">
+          <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/podcast/search_result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="64" column="3" selection-start-line="64" selection-end-line="90" />
+        <state relative-caret-position="289">
+          <caret line="92" column="50" lean-forward="true" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
           <folding>
-            <element signature="n#head#1;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#html#0;n#!!top" />
             <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
           </folding>
@@ -465,31 +444,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/podcast/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="127" column="20" lean-forward="true" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/subscribed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="2261">
+          <caret line="133" column="17" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/podcast/episodes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="110" column="52" selection-start-line="110" selection-start-column="52" selection-end-line="110" selection-end-column="52" />
+        <state relative-caret-position="386">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/toppodcasts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
+            <element signature="n#head#1;n#html#0;n#!!top" />
             <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/subscribed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/toptags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

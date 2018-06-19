@@ -3,7 +3,7 @@ from mygpoclient import public, api, simple
 from django.shortcuts import render, render_to_response
 import feedparser
 from operator import itemgetter
-import datetime
+import time
 from dateutil.parser import parse
 
 # Create your views here.
@@ -35,21 +35,16 @@ def smartSorting(subscriptions):
     list=[]
     for podcast in subscriptions:
         feedlist = feedparser.parse(podcast.get('url'))
-        count = 0;
+        count = 0
+        i=0
         entries=feedlist['entries']
-        for i in range(5):
-            if (len(entries) - 1 <= i ):
-                break
-            pattern = "%S"
-            time1 = parse(entries[i].published[:-5]).timestamp()
-            time2 = parse(entries[i + 1].published[:-5]).timestamp()
+        while i < len(entries) -1 and i <5:
+            time1 = time.mktime(entries[i].published_parsed)
+            time2 = time.mktime(entries[i+1].published_parsed)
             count += time1 - time2
-            
-        count = count/(5)
-        details=[]
-        details.append(entries)
-        details.append(count)
+            i+=1
+        details={'count': count, 'podcast' :podcast}
         list.append(details)
-    return sorted(list, key=itemgetter(1))
+    return sorted(list, key=itemgetter('count'))
 
 

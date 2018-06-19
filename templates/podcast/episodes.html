@@ -53,7 +53,7 @@
         }
         $(document).ready(function()
             {
-                $("w3-table-all").tablesorter();
+                $("table").tablesorter();
             }
         );
         // using jQuery
@@ -79,7 +79,6 @@
                     <li><a href="{% url 'toppodcasts' %}" class="">Top Podcasts All Time</a></li>
                     <li><a href="{% url 'toptags' %}" class="">Top Tags</a></li>
                     <li><a href="{% url 'subscribed' %}" class="">Subscribed</a></li>
-                    <li><a href="{% url 'subscribed' %}" class="">Trending Podcasts This Week</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -98,11 +97,17 @@
             {% if episodes|length != 0 %}
             <h4>Generated from Episode GPodder</h4>
             <table class="w3-table-all">
+                <thead>
                 <tr><th>Title</th><th>URL</th><th>Subscribed</th></th><th>Audio</th><th>Released Date</th></tr>
+                </thead>
+                <tbody>
                 {% for episode in episodes %}
                 <tr>
                     <td>
                         {{episode.title}}
+                    </td>
+                    <td>
+                        {{result.description|slice:":100"}}...
                     </td>
                     <td><a href="{{result.url}}">
                         {{episode.url|slice:":30"}}...
@@ -119,7 +124,7 @@
                     </td>
                 </tr>
                 {% endfor %}
-
+                </tbody>
             </table>
             {% endif %}
             {% if links|length != 0 %}
