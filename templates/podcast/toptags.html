@@ -4,7 +4,7 @@
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Standout</title>
+    <title>Podcast</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -39,6 +39,7 @@
     <script type="text/javascript" src="{% static 'podcast/js/nivo-lightbox.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jquery.isotope.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jqBootstrapValidation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'podcast/js/jquery.tablesorter.min.js' %}"></script>
     <script type="text/javascript">
         function goToByScroll(id) {
             // Remove "link" from the ID
@@ -49,10 +50,17 @@
                 },
                 'slow');
         }
-
+        $(document).ready(function()
+            {
+                $("w3-table-all").tablesorter();
+            }
+        );
         // using jQuery
     </script>
+
 </head>
+
+
 <div id="page-top" data-target=".navbar-fixed-top">
     <!-- Navigation
     ==========================================-->
@@ -79,10 +87,12 @@
         <!-- /.container-fluid -->
     </nav>
 </div>
+
 <div id="search_result">
     <div class="container">
         <div class="section-title text-center center">
             <h2>Top 50 Tags</h2>
+            <h3>Click on one of the tags to see what podcasts there are!</h3>
         </div>
         <div class="row"  name="tags">
             {% for tag in toptags %}

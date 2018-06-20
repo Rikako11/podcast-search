@@ -97,11 +97,34 @@ img.logo {
     margin-bottom:50px;
 }
 
-* {
+input {
     font-size: 30px;
 }
 
 header .intro-text {
     padding-top: 200px;
-   
+
+}
+
+#loginBox {
+    margin: 20% auto;
+    width: 200px;
+}
+nav#menu >div.container {
+    padding:0px 0px;
+}
+
+.td {
+    width:25%;
+}
+
+ul.nav .dropdown-content {
+    display: none;
+    position: absolute;
+}
+ul.nav .dropdown-content a {
+    color: black;
+}
+ul.nav .dropdown:hover > .dropdown-content {
+    display: block;
 }

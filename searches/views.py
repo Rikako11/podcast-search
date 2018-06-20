@@ -39,7 +39,9 @@ def index(request):
 
 
 def subscribed(request):
-    return render_to_response('podcast/subscribed.html', {"subscribed": mygpo.subscriptions})
+    recommended = mygpo.smartSorting(mygpo.subscriptions)
+    return render_to_response('podcast/subscribed.html', {"subscribed": mygpo.subscriptions,
+                                                          "recommended": recommended[:5]})
 
 def toptags(request):
     return render_to_response('podcast/toptags.html', {"toptags" : mygpo.top_tags_list})
@@ -49,29 +51,48 @@ def search_result(request):
     podcasts_from_tag = mygpo.client.get_podcasts_of_a_tag(tag_name)
     return render_to_response('podcast/search_result.html', {"podcasts" : podcasts_from_tag, "tag_name" : tag_name,})
 
-
 def toppodcasts(request):
     podcasts= mygpo.client.get_toplist()
+    print(podcasts[0].__dict__)
     return render_to_response('podcast/toppodcasts.html', {"podcasts" : podcasts})
 
 def episodes(request):
     podcast_url = request.GET['q']
     episodes=[]
+    links=[]
     feedlist = feedparser.parse(podcast_url)
     for entry in feedlist['entries']:
         for link in entry.links:
             if "audio/mpeg" == link.type:
                 try: 
-                    episode= mygpo.client.get_episode_data(podcast_url, link.href)
-                    episodes.append(episode)
+
+                    details=[]
+                    print(link)
+                    print(entry.keys())
+                    details.append(entry.title)
+                    details.append(entry.author)
+                    details.append(entry.summary)
+                    details.append(link.href)
+                    details.append(entry.published)
+                    links.append(details)
                 except:
-                    print("EPISODE DOES NOT EXIST:" + link.href)
+                    print
+                    
                 #episodes.append(mygpo.client.get_episode_data(podcast_url, link.href))
-    return render_to_response('podcast/episodes.html' , {"episodes":episodes})
+    return render_to_response('podcast/episodes.html' , {"episodes":episodes,
+                                                         "links": links,})
 
 def login(request):
-    return render_to_response('podcast/login_page.html')
-
+    if request.method=="POST":
+        try:
+            username = request.POST.get('user')
+            password = request.POST.get('pass')
+            user = api.MygPodderClient(username, password)
+            return render_to_response('podcast/index.html')
+        except :
+            print("invalid!")
+            return render_to_response('podcast/login.html', {"error" : "Invalid Username or Password!"})
+    return render_to_response('podcast/login.html')
 
     
 

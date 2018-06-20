@@ -5,7 +5,7 @@
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Standout</title>
+    <title>Podcast</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -40,6 +40,7 @@
     <script type="text/javascript" src="{% static 'podcast/js/nivo-lightbox.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jquery.isotope.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jqBootstrapValidation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'podcast/js/jquery.tablesorter.min.js' %}"></script>
     <script type="text/javascript">
         function goToByScroll(id) {
             // Remove "link" from the ID
@@ -50,11 +51,16 @@
                 },
                 'slow');
         }
-
+        $(document).ready(function()
+            {
+                $("w3-table-all").tablesorter();
+            }
+        );
         // using jQuery
     </script>
 
 </head>
+
 <div id="page-top" data-target=".navbar-fixed-top">
     <!-- Navigation
     ==========================================-->
@@ -65,7 +71,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span
                         class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-                <a class="navbar-brand page-scroll" href="#page-top">Standout</a></div>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">Podcast</a></div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -74,7 +80,6 @@
                     <li><a href="{% url 'toptags' %}" class="">Top Tags</a></li>
                     <li><a href="{% url 'subscribed' %}" class="">Subscribers</a></li>
                     <li><a href="{% url 'subscribed' %}" class="">Trending Podcasts This Week</a></li>
-                    <li><a href="{% url 'episodes' %}" class="">New Episodes</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -82,15 +87,18 @@
         <!-- /.container-fluid -->
     </nav>
 </div>
+
 <div id="search_result">
     <div class="container">
         <div class="section-title text-center center">
-            <h2>Subscribed Podcasts</h2>
+            <h2>Episode for "{{result.title}}"</h2>
+            <h3>See Which Episodes have been Uploaded!</h3>
         </div>
         <div class="row">
+            {% if episodes|length != 0 %}
             <table class="w3-table-all">
                 <tr><th>Title</th><th>URL</th><th>Subscribed</th><th>Release Date</th></tr>
-                {% for episode in episodes %}
+                {% for episode in recommended %}
                 <tr>
                     <td>
                         {{episode.title}}
@@ -103,10 +111,43 @@
                     <td>
                         {{episode.released}}
                     </td>
+                    <td>
+                        <audio controls>
+                        <source type="audio/mpeg" src="{{episode.podcast_url}}">
+                        </audio>
+                    </td>
                 </tr>
                 {% endfor %}
 
             </table>
+            {% endif %}
+            {% if links|length != 0 %}
+            <table class="w3-table-all">
+                <tr><th>Title</th><th>Author</th><th>Summary</th><th>Audio</th><th>Published</th></tr>
+                {% for link in links %}
+                 <tr>
+                     <td>
+                         {{link.0}}
+                     </td>
+                     <td>
+                         {{link.1}}
+                     </td>
+                     <td>
+                         {{link.2}}
+                     </td>
+                    <td>
+                        <audio controls>
+                            <source type="audio/mpeg" src="{{link.3}}">
+                        </audio>
+                    </td>
+                     <td>
+                         {{link.4}}
+                     </td>
+
+            </tr>
+                {% endfor %}
+            </table>
+            {% endif %}
         </div>
     </div>
 </div>

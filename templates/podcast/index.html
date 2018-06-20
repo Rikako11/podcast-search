@@ -40,6 +40,7 @@
     <script type="text/javascript" src="{% static 'podcast/js/nivo-lightbox.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jquery.isotope.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jqBootstrapValidation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'podcast/js/jquery.tablesorter.min.js' %}"></script>
     <script type="text/javascript">
         function goToByScroll(id) {
             // Remove "link" from the ID
@@ -50,7 +51,11 @@
                 },
                 'slow');
         }
-
+        $(document).ready(function()
+            {
+                $("w3-table-all").tablesorter();
+            }
+        );
         // using jQuery
     </script>
 
@@ -93,7 +98,7 @@
                             <input type="text" name="search" class="search" placeholder="Search podcasts...">
                             <input type="text" placeholder="Tag name" name="tag" class="tag">
                             <input type="submit" value="Submit">
-                            {% if error %}
+                            {% if error and request == 'POST' %}
                             <p>{{error}}</p>
                             {%endif%}
                         </form>
@@ -155,6 +160,7 @@
                     <td>
                         {{result.subscribers_last_week}}
                     </td>
+
                 </tr>
                 {% endfor %}
             </table>

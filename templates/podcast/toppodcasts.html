@@ -5,7 +5,7 @@
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Standout</title>
+    <title>Podcast</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -40,6 +40,7 @@
     <script type="text/javascript" src="{% static 'podcast/js/nivo-lightbox.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jquery.isotope.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jqBootstrapValidation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'podcast/js/jquery.tablesorter.min.js' %}"></script>
     <script type="text/javascript">
         function goToByScroll(id) {
             // Remove "link" from the ID
@@ -50,11 +51,17 @@
                 },
                 'slow');
         }
-
+        $(document).ready(function()
+            {
+                $("w3-table-all").tablesorter();
+            }
+        );
         // using jQuery
     </script>
 
 </head>
+
+
 <div id="page-top" data-target=".navbar-fixed-top">
     <!-- Navigation
     ==========================================-->
@@ -65,7 +72,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span
                         class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-                <a class="navbar-brand page-scroll" href="#page-top">Standout</a></div>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">Podcast</a></div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -81,20 +88,25 @@
         <!-- /.container-fluid -->
     </nav>
 </div>
+<!-- Header -->
 <div id="search_result">
     <div class="container">
         <div class="section-title text-center center">
-            <h2>Subscribed Podcasts</h2>
+            <h2>Top 50 Podcasts</h2>
+            <h3>All time favorites!</h3>
         </div>
         <div class="row">
             <table class="w3-table-all">
-                <tr><th>Title</th><th>URL</th><th>Subscribed</th></tr>
+                <tr><th>Title</th><th>Description</th><th>URL</th><th>Subscribed</th><th>Subscribers From Last Week</th></tr>
                 {% for result in podcasts %}
                 <tr>
-                    <td>
+                    <td><a href="../episodes/?q={{result.url}}">
                         {{result.title}}
                     </td>
-                    <td><a href="{{result.url}}">
+                    <td>
+                        {{result.description}}
+                    </td>
+                    <td><a target="_blank" href="{{result.url}}">
                         {{result.url|slice:":30"}}...
                     </a>
                     </td>

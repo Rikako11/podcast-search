@@ -88,42 +88,18 @@
         <!-- /.container-fluid -->
     </nav>
 </div>
-
 <div id="search_result">
     <div class="container">
         <div class="section-title text-center center">
-            <h2>Search Results for "{{tag_name}}"</h2>
+            <form action="index.php" method="POST" id="loginBox">
+                <input type="text" name="user" placeholder="Username" autocapitalize="off" /><br />
+                <input type="password" name="pass" placeholder="Password" /><br />
+                <input type="submit" value="Submit"><br />
+                {% if error and request == 'POST' %}
+                <p>{{error}}</p>
+                {%endif%}
+            </form>
         </div>
-        <div class="row">
-
-                <table class="w3-table-all">
-                    <><th>Title</th><th>Description</th><th>URL</th><th>Subscribers</th><th>Subscribers From Last Week></th></tr>
-                    {% for result in podcasts %}
-                    <tr>
-                        <td><a href="../episodes/?q={{result.url}}">
-                            {{result.title}}
-                        </a></td>
-                        <td>
-                            {{result.description}}
-                        </td>
-                        <td><a target="_blank" href="{{result.url}}">
-                        {{result.url|slice:":30"}}...
-                        </a>
-                        </td>
-                        <td>
-                            {{result.subscribers}}
-                        </td>
-                        <td>
-                            {{result.subscribers_last_week}}
-                        </td>
-                    </tr>
-                    {% endfor %}
-
-                </table>
-
-
-        </div>
-
     </div>
 </div>
 

@@ -5,7 +5,7 @@
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Standout</title>
+    <title>Podcast</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -40,6 +40,7 @@
     <script type="text/javascript" src="{% static 'podcast/js/nivo-lightbox.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jquery.isotope.js' %}"></script>
     <script type="text/javascript" src="{% static 'podcast/js/jqBootstrapValidation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'podcast/js/jquery.tablesorter.min.js' %}"></script>
     <script type="text/javascript">
         function goToByScroll(id) {
             // Remove "link" from the ID
@@ -50,11 +51,16 @@
                 },
                 'slow');
         }
-
+        $(document).ready(function()
+            {
+                $("w3-table-all").tablesorter();
+            }
+        );
         // using jQuery
     </script>
 
 </head>
+
 <div id="page-top" data-target=".navbar-fixed-top">
     <!-- Navigation
     ==========================================-->
@@ -84,7 +90,41 @@
 <div id="search_result">
     <div class="container">
         <div class="section-title text-center center">
+            <h2>Catch Up on your Subscriptions!</h2>
+            <h3>These are the top five podcasts that have been uploading better than ever!</h3>
+        </div>
+        <div class="row">
+            <table class="w3-table-all">
+                <tr><th>Title</th><th>URL</th><th>Subscribers</th><th>Subscribers Last Week</th></tr>
+                {% for result in recommended %}
+                <tr>
+                    <td><a href="episodes/?q={{result.url}}">
+                        {{result.0.title}}
+                    </a>
+                    </td>
+                    <td><a target="_blank" href="{{result.url}}">
+                        {{result.0.url|slice:":30"}}...
+                    </a>
+                    </td>
+                    <td>
+                        {{result.0.subscribers}}
+                    </td>
+                    <td>
+                        {{result.0.subscribers_last_week}}
+                    </td>
+                </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="search_result">
+    <div class="container">
+        <div class="section-title text-center center">
             <h2>Subscribed Podcasts</h2>
+            <h3>All your subscribed podcasts. Click on the title cells to see what episodes have been uploaded!</h3>
         </div>
         <div class="row">
             <table class="w3-table-all">
@@ -93,9 +133,10 @@
                 <tr>
                     <td><a href="episodes/?q={{result.url}}">
                         {{result.title}}
+                    </a>
                     </td>
-                    <td><a href="{{result.url}}">
-                        {{result.title|slice:":30"}}...
+                    <td><a target="_blank" href="{{result.url}}">
+                        {{result.url|slice:":30"}}...
                     </a>
                     </td>
                     <td>
