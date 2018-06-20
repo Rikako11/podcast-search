@@ -30,6 +30,7 @@ def index(request):
         context = {"search_result": search_result,
                    "search_term":search_term,
                    "tag_name" : tag_name,
+                   "request" : request.method,
                    }
         
         return render_to_response('podcast/index.html', context)        

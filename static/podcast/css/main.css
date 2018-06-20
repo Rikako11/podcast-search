@@ -96,3 +96,12 @@ img.logo {
 .w3-table-all {
     margin-bottom:50px;
 }
+
+* {
+    font-size: 30px;
+}
+
+header .intro-text {
+    padding-top: 200px;
+   
+}

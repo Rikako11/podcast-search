@@ -106,6 +106,7 @@
 <body>
 <div id="search_result">
     <div class="container">
+        {% if request == 'POST' %}
         <div class="section-title text-center center">
             {% if search_result|length > 0 %}
             <h2>Search Results for
@@ -123,7 +124,10 @@
                 <h2>No results for tag "{{tag_name}}"</h2>
                 {% endif %}
             {% endif %}
+
         </div>
+        {% endif %}
+
         {% if search_result|length != 0%}
         <div class="row">
             <table class="w3-table-all">
@@ -156,7 +160,7 @@
             </table>
         </div>
         {% endif %}
-     </div>
+    </div>
 </div>
 
 
