@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
-ALLOWED_HOSTS = ["ronuma.pythonanywhere.com","localhost"]
+ALLOWED_HOSTS = ["podcast-search1117.herokuapp.com","localhost"]
 
 
 
