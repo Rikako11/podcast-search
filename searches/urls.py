@@ -16,6 +16,7 @@ urlpatterns = [
     path('toppodcasts.html', views.toppodcasts, name='toppodcasts'),
     path('episodes.html', views.episodes, name="episodes"),
     path('login_page.html', views.login, name="login"),
+    url(r'^episodes/$', views.episodes, name='episodes'),
 
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

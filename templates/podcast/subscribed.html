@@ -88,14 +88,14 @@
         </div>
         <div class="row">
             <table class="w3-table-all">
-                <tr><th>Title</th><th>URL</th><th>Subscribers</th></tr>
+                <tr><th>Title</th><th>URL</th><th>Subscribers</th><th>Subscribers Last Week</th></tr>
                 {% for result in subscribed %}
                 <tr>
-                    <td>
+                    <td><a href="episodes/?q={{result.url}}">
                         {{result.title}}
                     </td>
                     <td><a href="{{result.url}}">
-                        {{result.url|slice:":30"}}...
+                        {{result.title|slice:":30"}}...
                     </a>
                     </td>
                     <td>
