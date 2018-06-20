@@ -65,7 +65,6 @@ def episodes(request):
         for link in entry.links:
             if "audio/mpeg" == link.type:
                 try: 
-
                     details=[]
                     print(link)
                     print(entry.keys())
@@ -75,12 +74,14 @@ def episodes(request):
                     details.append(link.href)
                     details.append(entry.published)
                     links.append(details)
+                    episodes.append(mygpo.client.get_episode_data(podcast_url, link.href))
                 except:
-                    print
+                    print()
                     
                 #episodes.append(mygpo.client.get_episode_data(podcast_url, link.href))
     return render_to_response('podcast/episodes.html' , {"episodes":episodes,
-                                                         "links": links,})
+                                                         "links": links,
+                                                         "podcast":podcast_url})
 
 def login(request):
     if request.method=="POST":

@@ -91,14 +91,15 @@
 <div id="search_result">
     <div class="container">
         <div class="section-title text-center center">
-            <h2>Episode for "{{result.title}}"</h2>
+            <h2>Episode for "{{podcast}}"</h2>
             <h3>See Which Episodes have been Uploaded!</h3>
         </div>
         <div class="row">
             {% if episodes|length != 0 %}
+            <h4>Generated from Episode GPodder</h4>
             <table class="w3-table-all">
-                <tr><th>Title</th><th>URL</th><th>Subscribed</th><th>Release Date</th></tr>
-                {% for episode in recommended %}
+                <tr><th>Title</th><th>URL</th><th>Subscribed</th></th><th>Audio</th><th>Released Date</th></tr>
+                {% for episode in episodes %}
                 <tr>
                     <td>
                         {{episode.title}}
@@ -109,12 +110,12 @@
                     </td>
                     <td>{{episode.podcast_url}}</td>
                     <td>
-                        {{episode.released}}
-                    </td>
-                    <td>
                         <audio controls>
                         <source type="audio/mpeg" src="{{episode.podcast_url}}">
                         </audio>
+                    </td>
+                    <td>
+                        {{episode.released}}
                     </td>
                 </tr>
                 {% endfor %}
@@ -122,6 +123,7 @@
             </table>
             {% endif %}
             {% if links|length != 0 %}
+            <h4>Generated from RSS Files</h4>
             <table class="w3-table-all">
                 <tr><th>Title</th><th>Author</th><th>Summary</th><th>Audio</th><th>Published</th></tr>
                 {% for link in links %}
