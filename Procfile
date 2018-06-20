@@ -1,1 +1,1 @@
-web: gunicorn searches.wsgi 
+gunicorn podcast.wsgi:searches
