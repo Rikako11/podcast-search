@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a08f4928-fdf4-4f62-9cc3-58b283ef2be0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/podcast/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podcast/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/podcast/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searches/mygpo.py" beforeDir="false" afterPath="$PROJECT_DIR$/searches/mygpo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searches/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/searches/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/searches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/podcast/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/podcast/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/podcast/episodes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/episodes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/podcast/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/podcast/search_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/search_result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/podcast/subscribed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/subscribed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/podcast/toppodcasts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/toppodcasts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/toptags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/toptags.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,14 +18,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="3" selection-start-line="3" selection-end-line="62" />
+            <state relative-caret-position="84">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -41,11 +35,12 @@
       <file leaf-file-name="episodes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/episodes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="98" column="40" lean-forward="true" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+            <state relative-caret-position="330">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -54,12 +49,12 @@
       <file leaf-file-name="subscribed.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/subscribed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="130" column="47" selection-start-line="130" selection-start-column="47" selection-end-line="130" selection-end-column="47" />
+            <state relative-caret-position="51">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -96,26 +91,22 @@
       <file leaf-file-name="search_result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/search_result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-end-line="95" />
+            <state relative-caret-position="17">
+              <caret line="64" column="3" lean-forward="true" selection-start-line="64" selection-end-line="90" />
               <folding>
                 <element signature="n#head#1;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toppodcasts.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toppodcasts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/toppodcasts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
-              <folding>
-                <element signature="n#div#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="389">
+              <caret line="81" column="76" selection-start-line="81" selection-start-column="76" selection-end-line="81" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -143,6 +134,8 @@
     <findStrings>
       <find>standou</find>
       <find>mp3</find>
+      <find>Subscribers</find>
+      <find>subscribers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,14 +152,14 @@
         <option value="$PROJECT_DIR$/static/podcast/css/login_page.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
         <option value="$PROJECT_DIR$/staticfiles/podcast/css/main.css" />
-        <option value="$PROJECT_DIR$/templates/podcast/index.html" />
         <option value="$PROJECT_DIR$/templates/podcast/login.html" />
         <option value="$PROJECT_DIR$/static/podcast/css/main.css" />
-        <option value="$PROJECT_DIR$/templates/podcast/subscribed.html" />
         <option value="$PROJECT_DIR$/templates/podcast/toptags.html" />
-        <option value="$PROJECT_DIR$/templates/podcast/search_result.html" />
-        <option value="$PROJECT_DIR$/templates/podcast/episodes.html" />
         <option value="$PROJECT_DIR$/templates/podcast/toppodcasts.html" />
+        <option value="$PROJECT_DIR$/templates/podcast/search_result.html" />
+        <option value="$PROJECT_DIR$/templates/podcast/subscribed.html" />
+        <option value="$PROJECT_DIR$/templates/podcast/episodes.html" />
+        <option value="$PROJECT_DIR$/templates/podcast/index.html" />
       </list>
     </option>
   </component>
@@ -235,7 +228,7 @@
       <workItem from="1528856063872" duration="958000" />
       <workItem from="1528931429747" duration="6035000" />
       <workItem from="1529201250781" duration="21383000" />
-      <workItem from="1529363973921" duration="48233000" />
+      <workItem from="1529363973921" duration="48634000" />
     </task>
     <task id="LOCAL-00001" summary="New Project">
       <created>1528856340045</created>
@@ -262,7 +255,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76609000" />
+    <option name="totallyTimeSpent" value="77010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -331,7 +324,8 @@
           <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -426,29 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/search_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-end-line="95" />
-          <folding>
-            <element signature="n#head#1;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" selection-start-line="3" selection-end-line="62" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/podcast/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -473,36 +444,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/episodes.html">
+    <entry file="file://$PROJECT_DIR$/templates/podcast/toppodcasts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="98" column="40" lean-forward="true" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+        <state relative-caret-position="389">
+          <caret line="81" column="76" selection-start-line="81" selection-start-column="76" selection-end-line="81" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/search_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="64" column="3" lean-forward="true" selection-start-line="64" selection-end-line="90" />
           <folding>
+            <element signature="n#head#1;n#html#0;n#!!top" />
             <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/podcast/subscribed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="130" column="47" selection-start-line="130" selection-start-column="47" selection-end-line="130" selection-end-column="47" />
+        <state relative-caret-position="51">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/toppodcasts.html">
+    <entry file="file://$PROJECT_DIR$/templates/podcast/episodes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
+        <state relative-caret-position="330">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="n#div#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#nav#0;n#div#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
