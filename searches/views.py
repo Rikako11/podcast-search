@@ -28,7 +28,7 @@ device = api.PodcastDevice('top25', 'mydevice', 'desktop', 0)
 user.put_subscriptions(device.device_id, subscriptions)
 list = list.sort(key=itemgetter('url'),reverse=False)
 feedlist = feedparser.parse(toplist[0].url)
-print(feedlist['namespaces'])
+print(feedlist['entries'])
 
 #print(client.get_episode_data(, toplist[0].website))
 #print(list)
