@@ -5,7 +5,7 @@
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Standout</title>
+    <title>Podcast</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -81,17 +81,63 @@
         <!-- /.container-fluid -->
     </nav>
 </div>
+<!-- Header -->
+<header id="header">
+    <div class="intro">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="intro-text"><span>Welcome to</span>
+                        <h1>Podcast</h1>
+                        <form name="search" method="POST">
+                            <input type="text" name="search" class="search" placeholder="Search podcasts...">
+                            <input type="text" placeholder="Tag name" name="tag" class="tag">
+                            <input type="submit" value="Submit">
+                            {% if error %}
+                            <p>{{error}}</p>
+                            {%endif%}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
 <div id="search_result">
     <div class="container">
         <div class="section-title text-center center">
-            <h2>Search Results for "{{tag_name}}"</h2>
+            {% if search_result|length > 0 %}
+            <h2>Search Results for
+                {%if tag_name|length > 0 %}
+                    tag "{{tag_name}}"
+                {% endif %}
+                {%if search_term|length > 0 %}
+                    term "{{search_term}}"
+                {% endif %}
+            </h2>
+            {% else %}
+                {%if tag_name|length == 0 %}
+                <h2>No results for term "{{search_term}}"</h2>
+                {% elif search_term|length == 0 %}
+                <h2>No results for tag "{{tag_name}}"</h2>
+                {% endif %}
+            {% endif %}
         </div>
+        {% if search_result|length != 0%}
         <div class="row">
+            <table class="w3-table-all">
+                <tr><th>Logo</th><th>Title</th><th>URL</th><th>Subscribers</th><th>Subscribers Last Week</th></tr>
+                {% for result in search_result %}
+                <tr>
+                    {%if result.logo_url|length == 0%}
+                    <td> <img class="logo" src="{% static 'podcast/img/music.png'%}"></td>
 
-                <table class="w3-table-all">
-                    <tr><th>Title</th><th>URL</th><th>Subscribers</th></tr>
-                    {% for result in podcasts %}
-                    <tr>
+                    {% else %}
+                    <td> <img class="logo" src=" {{result.logo_url}}"></td>
+
+                    {%endif %}
+
                     <td>
                         {{result.title}}
                     </td>
@@ -102,15 +148,15 @@
                     <td>
                         {{result.subscribers}}
                     </td>
-                    </tr>
-                    {% endfor %}
-
-                </table>
-
-
+                    <td>
+                        {{result.subscribers_last_week}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
         </div>
-
-    </div>
+        {% endif %}
+     </div>
 </div>
 
 

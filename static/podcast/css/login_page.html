@@ -70,47 +70,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{% url 'toppodcasts' %}" class="">Top Podcasts All Time</a></li>
+                    <li><a href="{% url 'subscribed' %}" class="">Subscribed Podcasts</a></li>
                     <li><a href="{% url 'toptags' %}" class="">Top Tags</a></li>
-                    <li><a href="{% url 'subscribed' %}" class="">Subscribers</a></li>
-                    <li><a href="{% url 'subscribed' %}" class="">Trending Podcasts This Week</a></li>
+                    <li><a href="{% url 'subscribed' %}" class="">Subscribed</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-</div>
-<div id="search_result">
-    <div class="container">
-        <div class="section-title text-center center">
-            <h2>Search Results for "{{tag_name}}"</h2>
-        </div>
-        <div class="row">
-
-                <table class="w3-table-all">
-                    <tr><th>Title</th><th>URL</th><th>Subscribers</th></tr>
-                    {% for result in podcasts %}
-                    <tr>
-                    <td>
-                        {{result.title}}
-                    </td>
-                    <td><a href="{{result.url}}">
-                        {{result.url|slice:":30"}}...
-                    </a>
-                    </td>
-                    <td>
-                        {{result.subscribers}}
-                    </td>
-                    </tr>
-                    {% endfor %}
-
-                </table>
-
-
-        </div>
-
-    </div>
 </div>
 
 
