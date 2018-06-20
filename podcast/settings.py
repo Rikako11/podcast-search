@@ -125,5 +125,13 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 ALLOWED_HOSTS = ["podcast-search1117.herokuapp.com","localhost"]
 
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR,  'templates'),
+    # Add to this list all the locations containing your static files 
+)
+
 
 
