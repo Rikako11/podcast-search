@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a08f4928-fdf4-4f62-9cc3-58b283ef2be0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podcast/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/podcast/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searches/middleware.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/searches/mygpo.py" beforeDir="false" afterPath="$PROJECT_DIR$/searches/mygpo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/searches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/podcast/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/podcast/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/episodes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/episodes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/search_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/search_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/subscribed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/subscribed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/toppodcasts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/toppodcasts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/podcast/toptags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/podcast/toptags.html" afterDir="false" />
-    </list>
+    <list default="true" id="a08f4928-fdf4-4f62-9cc3-58b283ef2be0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +11,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="-255">
               <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
             </state>
           </provider>
@@ -66,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toptags.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toptags.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/podcast/toptags.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -266,7 +252,7 @@
       <workItem from="1528856063872" duration="958000" />
       <workItem from="1528931429747" duration="6035000" />
       <workItem from="1529201250781" duration="21383000" />
-      <workItem from="1529363973921" duration="59055000" />
+      <workItem from="1529363973921" duration="59659000" />
     </task>
     <task id="LOCAL-00001" summary="New Project">
       <created>1528856340045</created>
@@ -293,7 +279,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87431000" />
+    <option name="totallyTimeSpent" value="88035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -456,13 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/podcast/toppodcasts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -493,6 +472,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/podcast/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
         </state>
       </provider>
     </entry>
